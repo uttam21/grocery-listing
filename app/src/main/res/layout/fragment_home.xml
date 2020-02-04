@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteBlue"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/text_view_countries"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="4dp"
+        android:text="Country"
+        android:textSize="20sp" />
+    <AutoCompleteTextView
+        android:id="@+id/actv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:completionThreshold="1"
+        android:hint="Select a Country"
+        android:dropDownAnchor="@id/text_view_countries"
+        android:completionHint="Select a Country"
+        android:popupBackground="@color/colorPrimary"/>
+
+
+
+
+    <RadioGroup
+        android:id="@+id/genderRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender : "
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:paddingRight="16dp"
+            />
+
+        <RadioButton
+            android:id="@+id/radio_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:textSize="20dp"
+            android:onClick="checkButton"/>
+
+        <RadioButton
+            android:id="@+id/radio_female"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:textSize="20dp"
+
+            android:onClick="checkButton"/>
+
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_foodItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_view_food_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose food items"
+            android:textSize="20dp"
+
+            android:textStyle="bold" />
+
+
+        <CheckBox
+            android:id="@+id/checkBoxPizza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30sp"
+
+            android:text="Pizza"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/text_view_food_items" />
+
+        <CheckBox
+            android:id="@+id/checkBoxCoffee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30sp"
+
+            android:text="Coffee"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <CheckBox
+            android:id="@+id/checkBoxBurger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30sp"
+
+            android:text="Burger"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/buttonOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30sp"
+
+            android:text="Order"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/buttonBuyMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30sp"
+
+        android:text="Buy More"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</LinearLayout>

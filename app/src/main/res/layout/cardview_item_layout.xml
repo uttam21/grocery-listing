@@ -23,7 +23,7 @@
             android:id="@+id/item_title_id"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Item Title"
+            android:text="Item Title kjsdhfkjshfkjsdhfkj"
             android:gravity="center"
             android:textSize="13dp"
             android:textColor="#2d2d2d"/>
